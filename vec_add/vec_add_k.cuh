@@ -1,0 +1,1 @@
+int* add_vec(int *a, int *b);
