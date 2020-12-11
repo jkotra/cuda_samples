@@ -8,7 +8,6 @@ __global__ void add_vec_cuda(int *a, int *b, int *c){
         c[index] = a[index] + b[index]; 
     }
 
-
 }
 
 int* add_vec(int *a, int *b){
@@ -32,6 +31,9 @@ int* add_vec(int *a, int *b){
 
     cudaMemcpy(c, d_c, size, cudaMemcpyDeviceToHost);
 
+    cudaFree(d_a);
+    cudaFree(d_b);
+    cudaFree(d_c);
 
     return c;
 }
