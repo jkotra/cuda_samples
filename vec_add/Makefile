@@ -8,5 +8,5 @@ vec_add_k.o: vec_add_k.cu
 	nvcc -g -c vec_add_k.cu
 
 clean:
-	rm * .o
+	rm *.o
 	rm vecadd
