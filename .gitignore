@@ -1,8 +1,2 @@
 **/*.o
 **/a.out
-
-#program 1
-**/vecadd
-
-#program 2
-**/helloworld
