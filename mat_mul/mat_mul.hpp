@@ -1,0 +1,1 @@
+int mat_mul_cuda(int *a, int *b, int *c, int m , int n);
